@@ -8,11 +8,11 @@ import { Menu, X, Cpu } from "lucide-react";
 const navItems = [
   { label: "Home",          path: "/",              ready: true  },
   { label: "Techniques",    path: "/techniques",    ready: true  },
-  { label: "Architectures", path: "/architectures", ready: false },
+  { label: "Architectures", path: "/architectures", ready: true  },
   { label: "Datasets",      path: "/datasets",      ready: true  },
-  { label: "Challenges",    path: "/challenges",    ready: false },
+  { label: "Challenges",    path: "/challenges",    ready: true  },
   { label: "Dashboard",     path: "/dashboard",     ready: true  },
-  { label: "Future Scope",  path: "/future-scope",  ready: false },
+  { label: "Future Scope",  path: "/future-scope",  ready: true  },
 ];
 
 /* ─── Navbar ─────────────────────────────────────────────────────────────── */

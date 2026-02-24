@@ -6,8 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Index from "./pages/Index";
 import TechniquesPage from "./pages/TechniquesPage";
+import ArchitecturesPage from "./pages/ArchitecturesPage";
+import ChallengesPage from "./pages/ChallengesPage";
 import DatasetsPage from "./pages/DatasetsPage";
 import ResultsPage from "./pages/ResultsPage";
+import FutureScopePage from "./pages/FutureScopePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,8 +26,11 @@ const App = () => (
           <Route element={<Layout />}>
             <Route path="/" element={<Index />} />
             <Route path="/techniques" element={<TechniquesPage />} />
+            <Route path="/architectures" element={<ArchitecturesPage />} />
+            <Route path="/challenges" element={<ChallengesPage />} />
             <Route path="/datasets" element={<DatasetsPage />} />
             <Route path="/dashboard" element={<ResultsPage />} />
+            <Route path="/future-scope" element={<FutureScopePage />} />
           </Route>
           {/* 404 — no layout */}
           <Route path="*" element={<NotFound />} />
