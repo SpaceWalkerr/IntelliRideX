@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import HeroBackground from "./HeroBackground";
 import NeuralVisual from "./NeuralVisual";
@@ -20,7 +21,7 @@ const Hero = () => (
           >
             <span className="glass inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-primary">
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-              Survey Paper — 2025
+              Survey Paper — 2026
             </span>
           </motion.div>
 
@@ -55,17 +56,22 @@ const Hero = () => (
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.45 }}
           >
-            <Button size="lg" className="gap-2 glow-primary text-base font-semibold">
-              <BookOpen className="w-5 h-5" />
-              Read Paper
+            <Button size="lg" className="gap-2 glow-primary text-base font-semibold" asChild>
+              <Link to="/references">
+                <BookOpen className="w-5 h-5" />
+                Read Paper
+              </Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="gap-2 text-base font-semibold border-foreground/10 bg-muted/30 backdrop-blur-sm hover:bg-muted/50"
+              asChild
             >
-              Explore Techniques
-              <ArrowRight className="w-5 h-5" />
+              <Link to="/techniques">
+                Explore Techniques
+                <ArrowRight className="w-5 h-5" />
+              </Link>
             </Button>
           </motion.div>
 
@@ -79,7 +85,7 @@ const Hero = () => (
             {[
               { value: "150+", label: "References" },
               { value: "12", label: "Techniques" },
-              { value: "2025", label: "Published" },
+              { value: "2026", label: "Published" },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-2xl font-bold text-gradient-primary">{stat.value}</div>

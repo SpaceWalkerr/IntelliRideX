@@ -13,6 +13,7 @@ const navItems = [
   { label: "Challenges",    path: "/challenges",    ready: true  },
   { label: "Dashboard",     path: "/dashboard",     ready: true  },
   { label: "Future Scope",  path: "/future-scope",  ready: true  },
+  { label: "References",    path: "/references",    ready: true  },
 ];
 
 /* ─── Navbar ─────────────────────────────────────────────────────────────── */
@@ -56,7 +57,7 @@ const Navbar = () => {
               <div className="leading-tight">
                 <span className="text-sm font-extrabold tracking-tight text-foreground/90">IntelliRideX</span>
                 <span className="hidden sm:block text-[9px] text-muted-foreground font-medium tracking-widest uppercase leading-none">
-                  Survey 2025
+                  Survey 2026
                 </span>
               </div>
             </Link>
@@ -101,7 +102,7 @@ const Navbar = () => {
             {/* ── Read Paper CTA + Hamburger ── */}
             <div className="flex items-center gap-3">
               <a
-                href="#"
+                href="/references"
                 className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 rounded-lg text-xs font-semibold bg-primary/10 border border-primary/25 text-primary hover:bg-primary/20 transition-colors glow-primary"
               >
                 Read Paper
@@ -167,7 +168,7 @@ const Navbar = () => {
 
                 <div className="mt-3 pt-3 border-t border-foreground/[0.06]">
                   <a
-                    href="#"
+                    href="/references"
                     className="flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold bg-primary/10 border border-primary/25 text-primary hover:bg-primary/20 transition-colors"
                   >
                     Read Paper
